@@ -166,3 +166,12 @@ We can solve any question and go through some of the initial configurations of t
 
 
 
+git init
+git add .
+git commit -m "Final project submission"
+git remote add origin https://github.com/abiramrani12-pixel/IPLD-Final-Project-individual-Abir-Amrani.git  
+git branch -M main
+git push -u origin main
+echo "# IPLD-Final-Project-individual-Abir-Amrani" >> README.md
+
+# IPLD-Final-Project-individual-Abir-Amrani

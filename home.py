@@ -4,7 +4,7 @@ import base64
     
 # ----- Page configs (tab title, favicon) -----
 st.set_page_config(
-    page_title="<Your Name> Portfolio",
+    page_title="<Abir Amrani > Portfolio",
     page_icon="📊",
 )
 
@@ -21,11 +21,11 @@ def home_page():
 
 
     # ----- Top title -----
-    st.html("""<div style="text-align: center;"><h1 style="text-align: center;">👋 Hi! My name is Python</h1></div>""")  # TODO: Add your name
+    st.html("""<div style="text-align: center;"><h1 style="text-align: center;">👋 Hi! My name is Abir</h1></div>""")  # TODO: Add your name
 
 
     # ----- Profile image file -----
-    profile_image_file_path = "profile.png"       # TODO: Upload your profile image to the same folder as this script and update this if it has a different name
+    profile_image_file_path = "pdp.png"       # TODO: Upload your profile image to the same folder as this script and update this if it has a different name
 
     with open(profile_image_file_path, "rb") as img_file:
         img = "data:image/png;base64," + base64.b64encode(img_file.read()).decode()
@@ -40,11 +40,11 @@ def home_page():
 
 
     # ----- Personal title or short description -----
-    current_role = "Current Role and/or Studies or Description"   # TODO: Change this
+    current_role = " Master’s Graduate in Corporate Finance | Data & Analytics Enthusiast"   # TODO: Change this
 
     st.html(f"""<div style="text-align: center;"><h4><i>{current_role}</i></h4></div>""")
 
-    st.write("##")    # Adding some space
+    st.write(" # # ")    # Adding some space
 
 
     # ----- About me section -----
@@ -52,19 +52,13 @@ def home_page():
 
     # TODO: Modify and adapt the following lines to your info, you can add or remove some details if you want
     st.write("""
-    - 🧑‍💻 I am a <Current Role and/or Studies> 
-
-    - 🛩️ prev: <Previous Experience, Background or Studies>
-
-    - ❤️ <Your Passion and/or Interests>
-
-    - 🤖 <Your Personal Projects>
-
-    - 🏂 <Your Hobbies>
-
-    - 📫 How to reach me: <Your Email>
-
-    - 🏠 Barcelona
+        - 🧑‍💻 Master’s graduate in Corporate Finance with strong interest in Data & Analytics  
+        - 🎓 Background in Finance, Management Control & Financial Analysis  
+        - ❤️ Passionate about data-driven decision making and business strategy  
+        - 🤖 Personal projects in Python, data analysis & dashboards  
+        - 🏂 Hobbies: learning new tools, analytics, and exploring new cities  
+        - 📫 How to reach me: aamrani@student.eae.es 
+        - 🏠 Based in Barcelona
     """)
 
     # Feel free to add other points like your Linkedin, Github, Social Media, etc.
