@@ -26,7 +26,7 @@ def load_data():
 
     temps_df  = pd.read_csv(data_path)
 
-      # TODO: Ex 3.1: Load the dataset using Pandas, use the data_path variable and set the index column to "show_id"
+      # TODO: Ex 3.1: Load the dataset using Pandas, use the data_path variable 
 
     if temps_df is not None:
         temps_df["Date"] = pd.to_datetime(temps_df["Date"]).dt.date
